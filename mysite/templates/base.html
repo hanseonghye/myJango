@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title%}
+            Django Web Programming
+        {% endblock %}
+    </title>
+
+    <link rel="stylesheet" type="text/css" href='{% static "css/base.css" %}'/>
+    <link rel="stylesheet" type="text/css" href='{% block extrastyle %}{% endblock %}'/>
+</head>
+<body>
+<div id="header">
+    <h2 class="maintitle">Easy&ampl Fast Django Web Programming</h2>
+    <h4 class="welcome">Welcome, <a href="#">hans</a>/
+                                <a href="#">Change password</a>/
+                                <a href="#">logout</a>
+    </h4>
+</div>
+
+<div id="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Bookmark</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Photo</a></li>
+    <li><a href="#">Add&bigtriangledown;</a>
+        <ul>
+            <li><a href="#">Bookmark</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Photo</a></li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="#">Change&bigtriangledown;</a>
+        <ul>
+            <li><a href="#">Bookmark</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Photo</a></li>
+        </ul>
+    </li>
+
+    <li><a href="#">Archive</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Photo</a></li>
+</div>
+
+{% block content %}{%end for %}
+{% block footer %}{%end for %}
+
+</body>
+</html>
