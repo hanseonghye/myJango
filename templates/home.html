@@ -5,7 +5,6 @@
 {% load staticfiles %}
 {% block extrastyle %}{% static "css/home.css" %}{% endblock %}
 
-
 {% block content %}
 <div id="content_home">
     <div id="homeing">
@@ -20,7 +19,7 @@
 
     <table id="applist">
         <tr>
-            <td><b><i><a href="#">Bookmark</a></i></b></td>
+            <td><b><i><a href="{% url 'bookmark:index' %}">Bookmark</a></i></b></td>
 
             <td>you can write your own post and share to other.</td>
             <td class="Edit"><i><a href="#">Add</a></i></td>
@@ -28,7 +27,7 @@
         </tr>
 
         <tr>
-            <td><b><i><a href="#">Blog</a></i></b></td>
+            <td><b><i><a href="{% url 'blog:index' %}">Blog</a></i></b></td>
             <td>you can write your own post and share to other.</td>
             <td class="Edit"><i><a href="#">Add</a></i></td>
             <td class="Edit"><i><a href="#">Change</a></i></td>
