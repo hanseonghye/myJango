@@ -19,5 +19,7 @@ urlpatterns = [
     path('tag/', TagTV.as_view(), name='tag_cloud'),
 
     # /tag/tagname/
-    path('tag/<atg>/', PostTOL.as_view(), name='tagged_object_list')
+    path('tag/<atg>/', PostTOL.as_view(), name='tagged_object_list'),
+    # /search/
+    path('search/', SearchFormView.as_view(), name='search'),
 ]

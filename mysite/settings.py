@@ -39,7 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bookmark.apps.BookmarkConfig',
     'blog.apps.BlogConfig',
-    'tagging.apps.TaggingConfig'
+    'tagging.apps.TaggingConfig',
+    'disqus',
+    'django.contrib.sites',
+    'photo.apps.PhotoConfig',
 ]
 
 MIDDLEWARE = [
@@ -131,3 +134,6 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+DISQUS_WEBSITE_SHORTNAME = 'pythonweb-4'
+SITE_ID=1
