@@ -1,9 +1,9 @@
-from msilib.schema import ListView
+
 
 from django.shortcuts import render
 
 # Create your views here.
-from django.views.generic import DetailView
+from django.views.generic import DetailView, ListView
 
 from photo.models import Album, Photo
 

@@ -13,7 +13,7 @@ urlpatterns = [
     # /archive/
     path('archive/', PostAV.as_view(), name='post_archive'),
     # /[year]/
-    path('<year>/$', PostYAV.as_view(), name='post_year_archive'),
+    path('<year>/', PostYAV.as_view(), name='post_year_archive'),
 
     # /teg/
     path('tag/', TagTV.as_view(), name='tag_cloud'),

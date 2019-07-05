@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'bookmark.apps.BookmarkConfig',
     'blog.apps.BlogConfig',
     'tagging.apps.TaggingConfig',
@@ -134,6 +135,8 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+LOGIN_REDIRECT_URL='/'
 
 DISQUS_WEBSITE_SHORTNAME = 'pythonweb-4'
 SITE_ID=1

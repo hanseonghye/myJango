@@ -18,7 +18,7 @@ class Album(models.Model):
 
 
 class Photo(models.Model):
-    album = models.ForeignKey(Album, on_delete=models.CASCADE, )
+    album = models.ForeignKey(Album, on_delete=models.CASCADE)
     title = models.CharField(max_length=50)
     image = ThumbnailImageField(upload_to='photo/%Y/%m')
     description = models.TextField(blank=True)
